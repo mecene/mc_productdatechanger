@@ -224,6 +224,6 @@ Reorganise your product.');
 
     public function hookDisplayAdminProductsExtra ($params)
     {        
-        return '<h1>mecene</h1>';
+        var_dump($params);
     }
 }
