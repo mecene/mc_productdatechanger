@@ -224,6 +224,6 @@ Reorganise your product.');
 
     public function hookDisplayAdminProductsExtra ($params)
     {        
-        return $params;
+        return $params['id_product'];
     }
 }
