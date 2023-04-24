@@ -24,6 +24,8 @@
 *  International Registered Trademark & Property of PrestaShop SA
 */
 
+use PrestaShop\PrestaShop\Core\Product\ProductExtraContent;
+
 if (!defined('_PS_VERSION_')) {
     exit;
 }
