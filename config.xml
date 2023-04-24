@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>mc_productdatechanger</name>
+	<displayName><![CDATA[MC product creation date changer]]></displayName>
+	<version><![CDATA[1.0.0]]></version>
+	<description><![CDATA[Change the date of creation of your product.
+Reorganise your product.]]></description>
+	<author><![CDATA[Clément Brule]]></author>
+	<tab><![CDATA[administration]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+</module>
