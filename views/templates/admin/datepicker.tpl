@@ -8,3 +8,4 @@
         {l s='Creation date.' mod='mc_productdatechanger'} : {$product_date}
 	</p>
 </div>
+{$params |@var_dump}
