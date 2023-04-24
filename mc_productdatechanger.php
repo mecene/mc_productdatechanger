@@ -213,17 +213,10 @@ Reorganise your product.');
         }
     }
 
-    /**
-     * Add the CSS & JavaScript files you want to be added on the FO.
-     */
-    public function hookHeader()
-    {
-        $this->context->controller->addJS($this->_path.'/views/js/front.js');
-        $this->context->controller->addCSS($this->_path.'/views/css/front.css');
-    }
 
     public function hookDisplayAdminProductsExtra ($params)
     {        
         return $params['id_product'];
+        return $this->display(__FILE__, 'views/templates/admin/datepicker.tpl');
     }
 }
