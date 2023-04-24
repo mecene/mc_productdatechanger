@@ -69,7 +69,7 @@ Reorganise your product.');
         return parent::install() &&
             $this->registerHook('header') &&
             $this->registerHook('displayBackOfficeHeader') &&
-            $this->registerHook('displayProductExtraContent');
+            $this->registerHook('displayAdminProductsExtra');
     }
 
     public function uninstall()
@@ -222,7 +222,7 @@ Reorganise your product.');
         $this->context->controller->addCSS($this->_path.'/views/css/front.css');
     }
 
-    public function hookDisplayProductExtraContent()
+    public function hookDisplayAdminProductsExtra()
     {
         $productExtraContent = new ProductExtraContent();
         $productExtraContent->setTitle($this->l('Gallery'));
