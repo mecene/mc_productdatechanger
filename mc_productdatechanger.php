@@ -222,10 +222,12 @@ Reorganise your product.');
         $this->context->controller->addCSS($this->_path.'/views/css/front.css');
     }
 
-    public function hookDisplayAdminProductsExtra()
-    {
-
-            
-        return 'hello mecene';
+    public function hookdisplayProductExtraContent($params)
+    {        
+        $array = array();
+        $array[] = (new PrestaShop\PrestaShop\Core\Product\ProductExtraContent())
+                ->setTitle('tittle')
+                ->setContent('content'));
+        return $array;
     }
 }
