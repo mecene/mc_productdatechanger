@@ -4,7 +4,7 @@
 		<strong>{l s='Change the creatio date for product:' mod='mc_productdatechanger'}</strong><br />
 		
 		{l s='Product id.' mod='mc_productdatechanger'} : {$product_id}<br />
-        {l s='Creation date.' mod='mc_productdatechanger'} : {$product_date}<br />
+        {l s='Creation date.' mod='mc_productdatechanger'} : {}<br />
 	</p>
 </div>
 {$product_date|@var_dump}
