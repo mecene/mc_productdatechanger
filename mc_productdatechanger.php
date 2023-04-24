@@ -216,7 +216,13 @@ Reorganise your product.');
 
     public function hookDisplayAdminProductsExtra ($params)
     {        
-        return $params['id_product'];
+        //return $params['id_product'];
+        $this->context->smarty->assign([
+            'product_id' => $params['id_product'],
+            'product_name' => 'name to find',
+            'product_date' => 'date',
+            'params' => $params
+        ]);
         return $this->display(__FILE__, 'views/templates/admin/datepicker.tpl');
     }
 }
