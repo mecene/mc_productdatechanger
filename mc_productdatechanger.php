@@ -220,6 +220,7 @@ Reorganise your product.');
         $this->context->smarty->assign([
             'product_id' => $params['id_product'],
             'product_date' => $params['date_add'],
+            'params' => $params
         ]);
         return $this->display(__FILE__, 'views/templates/admin/datepicker.tpl');
     }
