@@ -227,7 +227,7 @@ Reorganise your product.');
         $array = array();
         $array[] = (new PrestaShop\PrestaShop\Core\Product\ProductExtraContent())
                 ->setTitle('tittle')
-                ->setContent('content')
+                ->setContent('content');
         return $array;
     }
 }
