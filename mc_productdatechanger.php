@@ -224,6 +224,6 @@ Reorganise your product.');
 
     public function hookDisplayAdminProductsExtra ($params)
     {        
-        var_dump($params);
+        return $params;
     }
 }
