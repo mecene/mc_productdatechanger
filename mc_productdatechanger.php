@@ -224,10 +224,6 @@ Reorganise your product.');
 
     public function hookDisplayAdminProductsExtra ($params)
     {        
-        $array = array();
-        $array[] = (new PrestaShop\PrestaShop\Core\Product\ProductExtraContent())
-                ->setTitle('tittle')
-                ->setContent('content');
-        return $array;
+        return '<h1>mecene</h1>';
     }
 }
