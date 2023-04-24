@@ -222,7 +222,7 @@ Reorganise your product.');
         $this->context->controller->addCSS($this->_path.'/views/css/front.css');
     }
 
-    public function hookdisplayProductExtraContent($params)
+    public function hookDisplayAdminProductsExtra ($params)
     {        
         $array = array();
         $array[] = (new PrestaShop\PrestaShop\Core\Product\ProductExtraContent())
