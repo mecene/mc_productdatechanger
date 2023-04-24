@@ -219,9 +219,7 @@ Reorganise your product.');
         //return $params['id_product'];
         $this->context->smarty->assign([
             'product_id' => $params['id_product'],
-            'product_name' => 'name to find',
-            'product_date' => 'date',
-            'params' => $params
+            'product_date' => $params['date_add'],
         ]);
         return $this->display(__FILE__, 'views/templates/admin/datepicker.tpl');
     }
