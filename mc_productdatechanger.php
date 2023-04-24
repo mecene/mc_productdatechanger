@@ -224,12 +224,8 @@ Reorganise your product.');
 
     public function hookDisplayAdminProductsExtra()
     {
-        $productExtraContent = new ProductExtraContent();
-        $productExtraContent->setTitle($this->l('Gallery'));
-        $productExtraContent->setContent($this->context->smarty->fetch(
-            'module:nc_gallery/views/templates/front/tab_content.tpl'
-        ));
+
             
-        return array($productExtraContent);
+        return 'hello mecene';
     }
 }
