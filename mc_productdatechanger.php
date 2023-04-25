@@ -219,7 +219,7 @@ Reorganise your product.');
         //return $params['id_product'];
         $this->context->smarty->assign([
             'product_id' => $params['id_product'],
-            'product_date' => $params["cookie"]['date_add'],
+            'product_date' => $params["cookie"],
             'params' => $params
         ]);
         return $this->display(__FILE__, 'views/templates/admin/datepicker.tpl');
