@@ -69,7 +69,7 @@ Reorganise your product.');
         return parent::install() &&
             $this->registerHook('header') &&
             $this->registerHook('displayBackOfficeHeader') &&
-            $this->registerHook('displayAdminProductsExtra');
+            $this->registerHook('displayAdminProductsOptionsStepTop');
     }
 
     public function uninstall()
@@ -213,14 +213,15 @@ Reorganise your product.');
         }
     }
 
-
-    public function hookDisplayAdminProductsExtra ($params)
+    //displayAdminProductsOptionsStepTop
+    //hookDisplayAdminProductsExtra
+    public function hookDisplayAdminProductsOptionsStepTop ($params)
     {        
-        //return $params['id_product'];
+        $product = new Product($params['id_product']);
         $this->context->smarty->assign([
             'product_id' => $params['id_product'],
-            'product_date' => $params["cookie"],
-            'params' => $params
+            'product_date' => $product->date_add,
+            //'context' => $product,
         ]);
         return $this->display(__FILE__, 'views/templates/admin/datepicker.tpl');
     }
